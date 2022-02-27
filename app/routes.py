@@ -6,8 +6,8 @@ from app import app
 @app.route('/index')
 def index():
     user = {"username": "There"}
-    post = {"Welcome to the dossier <br> a one stop place where we believe <br> information should be available to everyone everytime at no cost"}
-    return render_template("index.html", title="Home", user=user,post=post)
+    posts = {"Welcome to the dossier a one stop place where we believe information should be available to everyone everytime at no cost"}
+    return render_template("index.html", title="Home", user=user,posts=posts)
     '''
 <html >
     <head >
