@@ -20,5 +20,5 @@ class DevelopmentConfig(Config):
     DEBUG = True
 
 
-class TestingConfig(Config):
-    TESTING = True
+# class TestingConfig(Config):
+#     TESTING = True
