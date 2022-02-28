@@ -13,17 +13,17 @@
 </head>
 
 <body>
-{% extends "base.html"%}
+    {% extends "base.html"%}
 
-{% block content %}
+    {% block content %}
     <h1> Hi {{user.username}}</h1>
-    {%for post in posts%}
+    {% for post in posts %}
     <div>
-        <p>{{post}}</p>
+        <p>{{ posts }}</p>
     </div>
-{% endfor%}
+    {% endfor%}
 
-{% endblock%}
+    {% endblock%}
 
 </body>
 
