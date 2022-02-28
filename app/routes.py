@@ -19,14 +19,3 @@ def get_news():
     dict = json.loads(data)
     return render_template("index.html",news=dict["articles"])    
 
-        
-    '''
-<html >
-    <head >
-        <title > Home-Page - Daily Dossier < /title >
-    </head >
-    <body >
-        <h1 > Hi," + user['username'] + "</h1>
-    </body >
-</html> 
-    '''
