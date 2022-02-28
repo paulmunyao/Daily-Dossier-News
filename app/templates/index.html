@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>The Dossier</title>
 </head>
 
 <body>
@@ -13,10 +14,11 @@
 
 
     {% block content %}
-
-    <h1>{{user.username}}</h1>
-    {% for post in posts %}
-    <div>
+    <div class="text-center">
+        <h1>{{user.username}}</h1>
+        {% for post in posts %}
+    </div>
+    <div >
         <p> {{post}} </p>
     </div>
     {% endfor%}
