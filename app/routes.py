@@ -7,7 +7,7 @@ from .request import get_latest_news
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {"username": "There"}
+    user = {"username": "Daily Dossier"}
     posts = {"Welcome to the dossier a one stop place where we believe information should be available to everyone, everywhere and  everytime at no cost"}
     return render_template("index.html", title="Home", user=user, posts=posts)
 
