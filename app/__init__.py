@@ -1,12 +1,7 @@
 from flask import Flask
-from flask_bootstrap import Bootstrap
-from config import config_options
-bootstrap = Bootstrap()
+from config import DevelopmentConfig
 
-def create_app(config_name):
-     app = Flask(__name__)
-
-
+app = Flask(__name__)
+app.config.from_object(DevelopmentConfig)
 
 from app import routes,errors
-

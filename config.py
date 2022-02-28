@@ -1,20 +1,24 @@
-import os
-
-class Config:
-
-    MOVIE_API_BASE_URL ='https://api.themoviedb.org/3/movie/{}?api_key={}'
-    MOVIE_API_KEY = os.environ.get('MOVIE_API_KEY')
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+class Config(object):
+    SECRET_KEY = 'guess-me'
+    DEBUG = False
+    TESTING = False
+    CSRF_ENABLED = True
 
 
-class ProdConfig(Config):
-    pass
+class ProductionConfig(Config):
+    DEBUG = False
+    MAIL_DEBUG = False
 
 
-class DevConfig(Config):
+class StagingConfig(Config):
+    DEVELOPMENT = True
     DEBUG = True
 
-config_options = {
-'development':DevConfig,
-'production':ProdConfig
-}
+
+class DevelopmentConfig(Config):
+    DEVELOPMENT = True
+    DEBUG = True
+
+
+class TestingConfig(Config):
+    TESTING = True

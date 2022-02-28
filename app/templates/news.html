@@ -2,17 +2,14 @@
     {% extends "base.html"%}
 
     {% block content %}
-    <h1> Hi {{user.username}}</h1>
-    {% for post in posts %}
-    <div>
-        <p> {{post}} </p>
-    </div>
-    {% endfor%}
+  
     {% for news in news_articles %}
     <ul>
         <li> {{news.title}} </li>
+        <li><img class="card-img-top" src="{{news.urlToImage}}" alt=""></li>
         <li> {{news.description}} </li>
-        <li> {{news.url}} </li>
+        <li> <a href="{{news.url}}">{{news.url}}</a> </li>
+        
     </ul>
     {% endfor%}
     {% endblock%}
