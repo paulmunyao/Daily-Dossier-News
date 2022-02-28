@@ -19,18 +19,16 @@
     {% block content %}
 
     {% for news in news_articles %}
-    <ul>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{news.urlToImage}}" alt="">
-            <div class="card-body">
-                <h5 class="card-title text-center">{{news.title}}</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{news.urlToImage}}" alt="">
+        <div class="card-body">
+            <h5 class="card-title text-center">{{news.title}}</h5>
+            <p class="card-text">{{news.description}}</p>
+            <a href="{{news.url}}" class="btn btn-primary">Readmore</a>
         </div>
-        <li> {{news.description}} </li>
-        <li> <a href="{{news.url}}">{{news.url}}</a> </li>
+    </div>
+
 
     </ul>
     {% endfor%}
