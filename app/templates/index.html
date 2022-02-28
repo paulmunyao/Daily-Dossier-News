@@ -1,30 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html"%}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if title %}
-    <title> {{title}} - Daily Dossier </title>
-    {% else %}
-    <title>Welcome to the Daily Dossier</title>
-    {% endif %}
-</head>
+{% block content %}
+<h1> Hi {{user.username}}</h1>
+{% for post in posts %}
+<div>
+    <p> {{post}} </p>
+</div>
+{% endfor%}
+{% for news in news_articles %}
+<ul>
+    <li> {{news.title}} </li>
+    <li> {{news.description}} </li>
+    <li> {{news.url}} </li>
+</ul>
 
-<body>
-    {% extends "base.html"%}
-
-    {% block content %}
-    <h1> Hi {{user.username}}</h1>
-    {% for post in posts %}
-    <div>
-        <p>{{ posts }}</p>
-    </div>
-    {% endfor%}
-
-    {% endblock%}
-
-</body>
-
-</html>
+{% endfor%}
+{% endblock%}

@@ -1,6 +1,3 @@
-import os
-import urllib.request,json
-
 import requests
 from decouple import config
 
