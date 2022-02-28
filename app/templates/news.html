@@ -19,15 +19,21 @@
     {% block content %}
 
     {% for news in news_articles %}
-
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="{{news.urlToImage}}" alt="">
-        <div class="card-body">
-            <h5 class="card-title text-center">{{news.title}}</h5>
-            <p class="card-text">{{news.description}}</p>
-            <a href="{{news.url}}" class="btn btn-primary">Readmore</a>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{news.urlToImage}}" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">{{news.title}}</h5>
+                        <p class="card-text">{{news.description}}</p>
+                        <a href="{{news.url}}" class="btn btn-primary">Readmore</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 
 
     </ul>
