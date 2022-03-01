@@ -20,11 +20,11 @@
                 {% for sources in news_sources %}
                 <div class="col-md-4 mb-5">
                     <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="{{news.urlToImage}}" alt="">
+                        <img class="card-img-top" src="{{sources.urlToImage}}" alt="">
                         <div class="card-body">
-                            <h5 class="card-title text-center">{{news.title}}</h5>
-                            <p class="card-text">{{news.description}}</p>
-                            <a href="{{news.url}}" class="btn btn-primary">Readmore</a>
+                            <h5 class="card-title text-center">{{sources.title}}</h5>
+                            <p class="card-text">{{sources.description}}</p>
+                            <a href="{{sources.url}}" class="btn btn-primary">Readmore</a>
                         </div>
                     </div>
                 </div>
