@@ -27,7 +27,6 @@ clone the github repo then run the above command
 👤 **Paul Munyao Mutiso**
 
 * Github: [@paulmunyao](https://github.com/paulmunyao)
-* LinkedIn: [@Paul Munyao](https://linkedin.com/in/Paul Munyao)
 
 # MIT License
 
