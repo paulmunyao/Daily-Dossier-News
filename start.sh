@@ -1,0 +1,1 @@
+NEWS_API_KEY='d1e7c9d92bd24e31b41ccdca38b4f31c'
