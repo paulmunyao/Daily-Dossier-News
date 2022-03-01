@@ -20,4 +20,4 @@ def news_headlines():
 @app.route('/sources')
 def news_sources():
     news_sources = get_latest_sources()
-    return render_template("news.html",news_sources=news_sources)
+    return render_template("sources.html",news_sources=news_sources)
