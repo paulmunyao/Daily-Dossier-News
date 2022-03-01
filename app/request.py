@@ -10,8 +10,6 @@ def get_latest_news():
     return news_data['articles']
 
 NEWS_API_KEY = config('NEWS_API_KEY')
-# COUNTRY = 'us'
-
 def get_latest_sources():
     news_data = requests.get(
         f'https://newsapi.org/v2/top-headlines/sources?&apiKey={NEWS_API_KEY}').json()
