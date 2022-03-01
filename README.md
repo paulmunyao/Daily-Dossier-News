@@ -7,6 +7,9 @@
 
 > This is a web application built on Flask that uses an API KEY to bring the user upto speed with the current news from all over the world.
 
+## Technology Used
+1)Python <br>2)Flask <br>3)Bootstrap
+
 ## Install
 
 ```sh
